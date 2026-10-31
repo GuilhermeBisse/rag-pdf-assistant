@@ -1,14 +1,3 @@
-
----
-title: RAG PDF Assistant
-emoji: 📚
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_port: 7860
----
-
-
 # RAG PDF Assistant
 
 Assistente inteligente desenvolvido em Python para consulta de documentos PDF utilizando a arquitetura RAG (Retrieval-Augmented Generation).
