@@ -148,3 +148,22 @@ for item in reversed(st.session_state.historico):
 if st.button("Limpar histórico"):
     st.session_state.historico = []
     st.rerun()
+
+if st.button("Conferir base de dados"):
+    try:
+        dir_base = "RAGPDF/base"
+
+        arquivos = [arq for arq in os.listdir(dir_base) if os.path.isfile(os.path.join(dir_base, arq))]
+
+        if not dir_base:
+            st.warning("A pasta 'RAGPDF/base' não foi encontrada.")
+        elif not arquivos:
+            st.info("Nenhum arquivo PDF encontrado na base de dados.")
+        else:
+            st.success(f"Encontrado(s) {len(arquivos)} documento(s) na base:")
+            
+            for pdf in arquivos:
+                st.markdown(f"📄 **{pdf}**")
+                
+    except Exception as e:
+        st.error(f"Erro ao conferir base de dados: {e}")
