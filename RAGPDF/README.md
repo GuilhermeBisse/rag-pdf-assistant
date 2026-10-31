@@ -2,6 +2,8 @@
 
 Assistente inteligente desenvolvido em Python para consulta de documentos PDF utilizando a arquitetura RAG (Retrieval-Augmented Generation).
 
+**[Acesse a aplicação rodando online no Streamlit Cloud](https://rag-pdf-assistant0.streamlit.app/)**
+
 ## Tecnologias utilizadas
 
 - Python
