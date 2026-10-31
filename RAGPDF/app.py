@@ -11,8 +11,7 @@ load_dotenv()
 if "OPENAI_API_KEY" not in os.environ and "OPENAI_API_KEY" in st.secrets:
     os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
-DIR_BASE = pathlib.Path(__file__).parent.resolve()
-CAMINHO_DB = str(DIR_BASE / "db")
+CAMINHO_DB = "RAGPDF/db"
 
 st.set_page_config(
     page_title="RAG - Consulta de PDFs",
